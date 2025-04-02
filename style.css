@@ -37,6 +37,8 @@ body {
   border: none;
   background: rgb(46, 226, 46);
   cursor: pointer;
+  padding-left: 3px;
+  border-top-right-radius: 10px;
 }
 
 .head {
@@ -63,11 +65,18 @@ ul li {
   width: 80vw;
   display: flex;
   justify-content: space-between;
+  height: 38px;
+  border-radius: 7px;
 }
 
 ul li p {
   flex-grow: 1;
   padding: 2px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  font-weight: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn {
@@ -78,17 +87,21 @@ ul li p {
   font-size: 16px;
   background: none;
   font-weight: 600;
+  align-self: center;
 }
 
-.donebtn
-{
+.donebtn {
   color: green;
-  padding: 7px;
+  padding: 4px;
 }
 
-.dellbtn
-{
+.dellbtn {
   color: red;
-  padding: 7px;
+  padding: 4px;
+}
 
+.todolist {
+  max-height: 60svh;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
